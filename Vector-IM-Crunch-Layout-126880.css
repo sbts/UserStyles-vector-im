@@ -1,0 +1,106 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("vector.im") {
+  * {
+    font-family: "InconsolataGo", "Inconsolata", "Consolas", monospace;
+  }
+
+  /* No, I do not want my tags shouting at me */
+  .mx_RoomSubList_label {
+    text-transform: none !important;
+  }
+
+  /* Don't split room names across lines */
+  .mx_RoomTile {
+    min-width: -moz-fit-content;
+    white-space: nowrap;
+    overflow-y: hidden;
+    max-height: 1.3em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  /* Pack more of them into the same space */
+  .mx_RoomTile > .mx_RoomTile_avatar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .mx_RoomTile > .mx_RoomTile_avatar > .mx_BaseAvatar {
+    top: -3px;
+  }
+  
+  .mx_RoomTile_avatar > .mx_BaseAvatar > .mx_BaseAvatar_initial {
+    top: -5px;
+    left: 3px;
+    /*width: 12px;*/
+    /*line-height: 6px;*/
+    /*font-size: 8px;*/
+    text-align: left;
+  }
+  .mx_RoomTile_avatar > .mx_BaseAvatar > .mx_BaseAvatar_image {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .mx_RoomTile_avatar > .mx_BaseAvatar_image {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .mx_RoomList {
+    padding-top: 4px;
+  }
+
+
+  /* Keep room names readable with Consolas/Inconsolata */
+  .mx_RoomList_scrollbar {
+    font-size: 10pt;
+  }
+  .mx_RoomTile_name {
+    font-size: 10pt;
+    vertical-align: top;
+  }
+
+  /* Don't cut them off, either */
+  .mx_LeftPanel,
+  .mx_RoomList_scrollbar,
+  .mx_RoomList_scrollbar > .gm-scroll-view,
+  .mx_RoomList,
+  .mx_RoomList > div,
+  .mx_RoomList > div > .mx_RoomSubList {
+    min-width: -moz-fit-content;
+  }
+
+  .mx_LeftPanel .mx_BottomLeftMenu {
+    flex-basis: 40px;
+  }
+  
+  .mx_LeftPanel .mx_BottomLeftMenu_options {
+    margin-top: 8px;
+  }
+  
+  .mx_RoomList_scrollbar {
+    width: 19em;
+  }
+
+  /* Widen the chat history */
+  .mx_MessageComposer_wrapper,
+  .mx_RoomHeader_wrapper,
+  .mx_RoomView_messagePanel,
+  .mx_RoomView_messageListWrapper,
+  .mx_RoomView_auxPanel {
+    max-width: 100% !important;
+  }
+
+  /* Colorize emotes */
+  .mx_MEmoteTile.mx_MessageTile_content {
+    font-weight: bold;
+    color: blue;
+  }
+
+  .mx_MatrixChat {
+    width: 100vw;
+    height: 100vh;
+  }
+}
