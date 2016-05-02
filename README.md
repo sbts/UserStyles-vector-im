@@ -9,13 +9,13 @@
 
   Contact the Author in [vector.im room #sbts](https://vector.im/#/room/#sbts:matrix.org)
 
-### Notes
+#### Notes
 To get the best out of this theme you will probably want to zoom out by 1 step and install one of the following fonts.<br>
 They are listed in order of preference
 - InconsolataGo
 - Inconsolata
 - Consolas
-- monospace
+- Monospace
 
   InconsolataGo and Inconsolata can be obtained from
   [inconsolata](http://levien.com/type/myfonts/inconsolata.html)
@@ -35,6 +35,6 @@ They are listed in order of preference
   Contact the Author at
   Contact the Author in [vector.im room #sbts](https://vector.im/#/room/#sbts:matrix.org)
 
-###  Notes
+#### Notes
   This theme interoperates well with
   [Vector IM Crunch Layout by sbts](https://userstyles.org/styles/126880/vector-im-crunch-layout-by-sbts)
