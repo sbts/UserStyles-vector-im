@@ -46,7 +46,7 @@
     margin-left: .5em;
     background: white;
   }
-  
+
   .mx_RoomTile.mx_RoomTile_selected > .mx_RoomTile_name > span {
     background: white;
   }
@@ -54,9 +54,9 @@
   .mx_RoomTile.mx_RoomTile_selected > .mx_RoomTile_avatar {
      padding-left: calc(18px - .5em - 3px);
   }
-  
-  
-  
+
+
+
 /* these are the Message Panel bits */
   .mx_MatrixChat .mx_MatrixChat_middlePanel {
     background-color: #cccccc;
@@ -72,7 +72,10 @@
   linkified a:hover, a:link, a:visited {
     color: darkblue;
   }
-  
+  .mx_EventTile_content .markdown-body a {
+    color: darkblue;
+  }
+
 /* Title area in Message Panel */
   .mx_RoomView .mx_RoomHeader {
     background-color: #181818;
