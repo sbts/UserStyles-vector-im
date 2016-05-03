@@ -4,7 +4,7 @@
 ## extract-themes-from-db.pl
   This script extracts the current theme version from the stylish db in firefox as individual files in the current working dir
 
-## vector-im-crunch-layout-by-sbts.css
+## [vector-im-crunch-layout-by-sbts.css](https://userstyles.org/styles/126880/vector-im-crunch-layout-by-sbts)
   This theme reduces the wasted screen realestate by reducing roomlist font and avatar size and other changes to reduce the amount of whitespace present
 
   Contact the Author in [vector.im room #sbts](https://vector.im/#/room/#sbts:matrix.org)
@@ -28,13 +28,20 @@ They are listed in order of preference
   [Vector IM Slate Theme by sbts](https://userstyles.org/styles/126879/vector-im-slate-theme-by-sbts)
 
 
-## vector-im-slate-theme-by-sbts.css
+## [vector-im-slate-theme-by-sbts.css](https://userstyles.org/styles/126879/vector-im-slate-theme-by-sbts)
   A 4 tone slate theme for vector.im<br>
   This theme increases the visibility of rooms with highlights and unread messages while at the same time muting the "whiteness" that is the default
 
-  Contact the Author at
   Contact the Author in [vector.im room #sbts](https://vector.im/#/room/#sbts:matrix.org)
 
 #### Notes
   This theme interoperates well with
   [Vector IM Crunch Layout by sbts](https://userstyles.org/styles/126880/vector-im-crunch-layout-by-sbts)
+
+
+## [vector-im-dark-theme.css](https://userstyles.org/styles/124155/vector-im-dark-theme)
+  A dark theme for the vector.im Matrix client.
+  This them was created by matrix.org user Dusk
+  Contact the Author in [vector.im room #Loby](https://vector.im/#/room/#contact:dusky.horse)
+
+  WARNING: The version found in this Github Repository may not be in sync with the version found at userstyles.org
