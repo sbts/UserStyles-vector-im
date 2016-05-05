@@ -13,7 +13,7 @@
   /* Don't split room names across lines */
   .mx_RoomTile {
     min-width: -moz-fit-content;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow-y: hidden;
     max-height: 1.3em;
     padding-top: 1px;
@@ -70,6 +70,8 @@
   .mx_RoomList > div,
   .mx_RoomList > div > .mx_RoomSubList {
     min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
+    min-width: fit-content;
   }
 
   .mx_LeftPanel .mx_BottomLeftMenu {
