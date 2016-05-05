@@ -7,7 +7,7 @@
   }
 */
 /* These are the roomlist panel bits */
-  .mx_MatrixChat .mx_LeftPanel { 
+  .mx_MatrixChat .mx_LeftPanel {
     background-color: #b3b3b3;
   }
   .mx_SearchBox {
@@ -45,8 +45,9 @@
     border-bottom-left-radius: .5em;
     margin-left: .5em;
     background: white;
+   /* overflow-x: hidden;*/
   }
-  
+
   .mx_RoomTile.mx_RoomTile_selected > .mx_RoomTile_name > span {
     background: white;
   }
@@ -54,9 +55,9 @@
   .mx_RoomTile.mx_RoomTile_selected > .mx_RoomTile_avatar {
      padding-left: calc(18px - .5em - 3px);
   }
-  
-  
-  
+
+
+
 /* these are the Message Panel bits */
   .mx_MatrixChat .mx_MatrixChat_middlePanel {
     background-color: #cccccc;
@@ -75,8 +76,8 @@
   .mx_EventTile_content .markdown-body a {
     color: darkblue;
   }
-  
-  
+
+
 /* Title area in Message Panel */
   .mx_RoomView .mx_RoomHeader {
     background-color: #181818;
@@ -106,7 +107,7 @@
     border-radius: 4px;
   }
 
-  
+
 /* Misc */
   .mx_BaseAvatar_image {
     background-color: white
