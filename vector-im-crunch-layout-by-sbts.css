@@ -103,4 +103,34 @@
     width: 100vw;
     height: 100vh;
   }
+  
+/*  see if we can handle URL previews in a nicer way   */
+  div.mx_LinkPreviewWidget:before {
+    content: "  == Hover for URL Preview ==";
+  }
+  div.mx_LinkPreviewWidget:hover:before {
+    content: "";
+  }
+  div.mx_LinkPreviewWidget_caption {
+    display: none;
+  }
+  div.mx_LinkPreviewWidget_caption:hover {
+    display: block;
+  }
+  div.mx_LinkPreviewWidget:hover div.mx_LinkPreviewWidget_caption {
+    display: block;
+  }
+  div.mx_LinkPreviewWidget_image {
+    display: none;
+  }
+  div.mx_LinkPreviewWidget_image:hover {
+    display: block;
+  }
+  div.mx_LinkPreviewWidget:hover div.mx_LinkPreviewWidget_image {
+    display: block;
+  }
 }
+
+
+
+
