@@ -131,6 +131,24 @@
   div.mx_LinkPreviewWidget:hover div.mx_LinkPreviewWidget_image {
     display: block;
   }
+  
+/*  see if we can handle Image Thumbnails in a nicer way   */
+  span.mx_MImageBody:before {
+    content: "  == Hover for IMAGE Thumbnail ==\A";
+    white-space: pre;
+  }
+  span.mx_MImageBody:hover:before {
+    content: "";
+  }
+  img.mx_MImageBody_thumbnail {
+    display: none;
+  }
+  img.mx_MImageBody_thumbnail:hover {
+    display: block;
+  }
+  span.mx_MImageBody:hover img.mx_MImageBody_thumbnail {
+    display: block;
+  }
 }
 
 
