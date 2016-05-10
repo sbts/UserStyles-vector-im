@@ -86,7 +86,48 @@
     width: 19em;
   }
 
-  /* Widen the chat history */
+/* Member List tweaks */
+  /* Pack more of them into the same space */
+  .mx_EntityTile > .mx_EntityTile_name {
+    font-size: 10pt;
+    vertical-align: top;
+    padding-top: 3px;
+  }
+  .mx_EntityTile > .mx_EntityTile_avatar {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 25px;
+    width: 20px;
+  }
+  
+  .mx_EntityTile > .mx_EntityTile_avatar > .mx_BaseAvatar_image {
+    width: 14px;
+    height: 14px;
+  }
+
+  .mx_EntityTile > .mx_EntityTile_avatar > .mx_EntityTile_power {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .mx_EntityTile > .mx_EntityTile_avatar > .mx_BaseAvatar {
+    top: 0px;
+  }
+  .mx_EntityTile > .mx_EntityTile_avatar > .mx_BaseAvatar > .mx_BaseAvatar_initial {
+    top: -10px;
+    left: 3px;
+    width: 12px;
+   /* line-height: 6px !important;*/
+    font-size: 16px !important;
+    text-align: left;
+  }
+  .mx_EntityTile > .mx_EntityTile_avatar > .mx_BaseAvatar > .mx_BaseAvatar_image {
+    width: 14px;
+    height: 14px;
+  }
+  
+  
+/* Widen the chat history */
   .mx_MessageComposer_wrapper,
   .mx_RoomHeader_wrapper,
   .mx_RoomView_messagePanel,
