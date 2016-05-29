@@ -1,8 +1,10 @@
 # UserStyles-vector-im
 
 To install these themes please visit
-[Slate theme](https://userstyles.org/styles/126879/vector-im-slate-theme-by-sbts)
-[Crunch theme](https://userstyles.org/styles/126880/vector-im-crunch-layout-by-sbts)
+
+- [Slate theme](https://userstyles.org/styles/126879/vector-im-slate-theme-by-sbts)
+- [Crunch theme](https://userstyles.org/styles/126880/vector-im-crunch-layout-by-sbts)
+
 on each of those pages there is a button to install the theme.
 If you don't have stylish installed the button will install that the first time you click it.
 (Stylish is used to integrate the tee with your browser)
