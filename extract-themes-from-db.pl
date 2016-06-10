@@ -21,9 +21,12 @@ foreach my $row (@$all) {
     my $filename = $url // '';
     $filename =~ s/.*\///;
     $filename .= '.css';
+    $code =~ s/\r\n/\n/g; # convert <cr><lf> to just <lf>
+    $code =~ s/\n*$//;    # Strip trailing newlines from data
+    $code .= "\n";        # make sure there is a trailing newline for the file
     print "$id | $name  =>  $filename \t\t: ";
     open( my $file, '>', $filename) or die $!;
-    print $file "$code" or die $!;
+        print $file "$code" or die $!;
     close $file or die $!;
     chomp( my $diff = `git diff --color $filename`);
     if ($diff) {
