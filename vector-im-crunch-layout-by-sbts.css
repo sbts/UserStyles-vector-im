@@ -48,11 +48,6 @@
     height: 14px;
   }
   
-  .mx_RoomList {
-    padding-top: 4px;
-  }
-
-
   /* Keep room names readable with Consolas/Inconsolata */
   .mx_RoomList_scrollbar {
     font-size: 10pt;
@@ -62,16 +57,15 @@
     vertical-align: top;
   }
 
-  /* Don't cut them off, either */
-  .mx_LeftPanel,
-  .mx_RoomList_scrollbar,
-  .mx_RoomList_scrollbar > .gm-scroll-view,
-  .mx_RoomList,
-  .mx_RoomList > div,
-  .mx_RoomList > div > .mx_RoomSubList {
-    min-width: -moz-fit-content;
-    min-width: -webkit-fit-content;
-    min-width: fit-content;
+  /* Truncate them as well */
+  .mx_RoomTile {
+    min-width: initial;
+    overflow: hidden;
+    margin-right: 0.5em;
+  }
+  .mx_RoomTile_name {
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .mx_LeftPanel .mx_BottomLeftMenu {
@@ -81,10 +75,22 @@
   .mx_LeftPanel .mx_BottomLeftMenu_options {
     margin-top: 8px;
   }
-  
-  .mx_RoomList_scrollbar {
-    width: 19em;
+
+  /* tweaks for when the roomlist is collapsed. */
+  .collapsed .mx_RoomTile_avatar {
+    padding-left: 5px;
   }
+  .collapsed .mx_RoomTile_badge {
+    margin-top: -8px;
+  }
+  .collapsed .mx_RoomTile {
+    margin-right: 0;
+  }
+
+  .mx_RoomList {
+    padding-top: 4px;
+  }
+
 
 /* Member List tweaks */
   /* Pack more of them into the same space */
