@@ -14,6 +14,7 @@ my $db = DBI->connect("dbi:SQLite:$db_url", "", "",
 #$db->do("CREATE TABLE n (id INTEGER PRIMARY KEY, f TEXT, l TEXT)");
 #$db->do("INSERT INTO n VALUES (NULL, 'john', 'smith')");
 my $all = $db->selectall_arrayref('SELECT id, name, url, updateUrl, code FROM styles where code like "%domain(_vector.im%" and url not null');
+my $ChangesCommitted=0;
 
 foreach my $row (@$all) {
     my ($id, $name, $url, $updateUrl, $code) = @$row;
@@ -21,9 +22,9 @@ foreach my $row (@$all) {
     $filename =~ s/.*\///;
     $filename .= '.css';
     print "$id | $name  =>  $filename \t\t: ";
-    open( my $file, '>', $filename);
-    print $file "$code";
-    close $file;
+    open( my $file, '>', $filename) or die $!;
+    print $file "$code" or die $!;
+    close $file or die $!;
     chomp( my $diff = `git diff --color $filename`);
     if ($diff) {
         print "CHANGED\n";
@@ -36,6 +37,7 @@ foreach my $row (@$all) {
         my $input = <STDIN>;
         chomp $input;
         if ($input) {
+            $ChangesCommitted=1;
             print "\nrunning: git commit $filename -m \"$input\"\n\n";
             chomp( my $commit = `git commit $filename -m "$input"`);
             print "\n$commit\n";
@@ -47,9 +49,12 @@ foreach my $row (@$all) {
         print "same\n";
     };
 
-        print "\n\n===========================================================================\n";
-        print "If there were any commits please don't forget to push to github\n";
-        print "===========================================================================\n";
-        print "git push\n";
-        print "===========================================================================\n";
+}
+
+if ($ChangesCommitted) {
+    print "\n\n===========================================================================\n";
+    print "You committed some changes please don't forget to push to github with\n";
+    print "===========================================================================\n";
+    print "git push\n";
+    print "===========================================================================\n";
 }
